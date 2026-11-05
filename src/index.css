@@ -1,0 +1,12 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{background:radial-gradient(ellipse at top,#2a0a12 0,#0b0a0c 60%);color:#f3ead2;font-family:Inter,sans-serif;min-height:100vh}
+.btn{@apply rounded-xl px-5 py-3 font-semibold transition active:scale-95 disabled:opacity-40 disabled:pointer-events-none}
+.gold{@apply bg-gradient-to-b from-gold-light to-gold text-ink shadow-lg shadow-gold/20}
+.ghost{@apply border border-gold/50 text-gold-light hover:bg-gold/10}
+.panel{@apply rounded-2xl border border-gold/30 bg-black/50 p-4 backdrop-blur}
+.flip{perspective:900px}.flip>div{position:relative;width:100%;height:100%;transition:transform .8s;transform-style:preserve-3d}
+.flip.up>div{transform:rotateY(180deg)}.face{position:absolute;inset:0;backface-visibility:hidden;border-radius:10px}.front{transform:rotateY(180deg)}
+.back{background:repeating-linear-gradient(45deg,#6d1020 0 6px,#4a0a15 6px 12px);border:3px solid #d4af37}
+@keyframes fly{from{transform:translate(-120px,-40px) rotate(-20deg) scale(.7);opacity:0}to{transform:none;opacity:1}}.fly{animation:fly .6s ease-out}
+@keyframes shuf{0%,100%{transform:translateX(0)}25%{transform:translateX(-22px) rotate(-6deg)}75%{transform:translateX(22px) rotate(6deg)}}.shuf{animation:shuf .5s 2}
+@keyframes wave{0%,100%{transform:translateX(0)}50%{transform:translateX(-8px)}}.wave{animation:wave 2s infinite}
