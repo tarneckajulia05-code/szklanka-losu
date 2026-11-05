@@ -1,0 +1,1 @@
+module.exports={content:['./index.html','./src/**/*.{ts,tsx}'],theme:{extend:{colors:{ink:'#0b0a0c',gold:{DEFAULT:'#d4af37',light:'#f1d97a'},wine:{DEFAULT:'#6d1020',light:'#9b1d34'}},fontFamily:{serif:['"Playfair Display"','Georgia','serif']}}}};
